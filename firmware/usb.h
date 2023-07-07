@@ -30,13 +30,8 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
     #include "HID.h"
 
     #ifdef NRF52840_XXAA  // only the 840 has USB available.
-        #ifdef ARDUINO_NRF52_ADAFRUIT
-            // do nothing since the Adafruit BSP doesn't support ediv.
-        #endif
-        #ifdef ARDUINO_NRF52_COMMUNITY
             #include "Adafruit_TinyUSB.h"
             #define TINYUSB_AVAILABLE 1
-        #endif
     #endif
 
 
@@ -45,7 +40,7 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
     void usb_setup();
     bool usb_isConnected();
     void usb_wakeup();
-    void usb_sendKeys(uint8_t currentReport[8]);
+    void usb_sendKeys(HIDKeyboard currentReport);
     void usb_sendMediaKey(uint16_t keycode);
     void usb_sendMouseKey(uint16_t keycode);
     void usb_sendMouseMove(uint16_t keycode, uint16_t steps);

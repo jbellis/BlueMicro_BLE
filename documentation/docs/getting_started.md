@@ -5,6 +5,18 @@ sidebar_label: Getting Started
 slug: /
 ---
 
+## BlueMicro Youtube Channel
+
+See a number of tutorials, builds and other keyboard related videos on the [BlueMicro Youtube Channel](https://www.youtube.com/channel/UCFpGp4hHe03nvF9c8_gF_jA/featured).
+
+## NEW: BlueMicro Builder
+A very easy way to get setup with your own firmware and compile it without installing anything on your computer[^1]! 
+
+More documentation to come...
+Find the builder [here](https://github.com/jpconstantineau/BlueMicro_Builder) and follow the instructions in the readme.
+
+[^1]: nRF52840 Only.  With nRF52832, you still need software to flash.
+
 ## Getting Started: in 4 simple steps
 
 Getting started with flashing your nRF52 board is as simple as installing the Arduino IDE for your operating system, adding the board support packages and compiling the firmware.
@@ -18,10 +30,10 @@ Watch the video above to see how to install the Arduino IDE and get the library 
 These are the steps followed in the video (Original Instructions by [Adafruit](https://learn.adafruit.com/bluefruit-nrf52-feather-learning-guide/arduino-bsp-setup)):
 - Download and install the Arduino IDE (At least v1.8). Download it from [here](https://www.arduino.cc/en/Main/Software). Do not install it from the App Store.
 - Start the Arduino IDE
-- Add `https://www.adafruit.com/package_adafruit_index.json` as an **Additional Board Manager URL** (see image below)
+- Add `https://adafruit.github.io/arduino-board-index/package_adafruit_index.json` as an **Additional Board Manager URL** (see image below)
 - To add board Community nRF52 board support, start Arduino and open the Preferences window (**File** > **Preferences**). Now copy and paste the following 2 URLs into the 'Additional Boards Manager URLs' input field:
 
-	https://www.adafruit.com/package_adafruit_index.json
+	https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
 	https://github.com/jpconstantineau/Community_nRF52_Arduino/releases/latest/download/package_jpconstantineau_boards_index.json
 
 ![Board Manager](https://cdn-learn.adafruit.com/assets/assets/000/040/294/large1024/microcontrollers_Screen_Shot_2017-03-19_at_22.16.49.png)
